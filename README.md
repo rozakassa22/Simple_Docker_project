@@ -7,21 +7,28 @@ Create a virtual environment and activate it (optional, for local development wi
 Commands:
 
 python -m venv venv
+
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
 pip install -r requirements.txt
+
 # Running the Application with Docker
 Build and run the Docker containers using Docker Compose.
 
-Commands: 
+Commands:
+ 
 docker-compose build
+
 docker-compose up
 
 # Accessing the Application
 Nginx Proxy (Default): Open your browser and go to http://localhost
+
 Flask Application Directly: Open your browser and go to http://localhost:5000
 
 # Stopping the Application
 To stop the application, press CTRL+C in the terminal where docker-compose up is running, or use:
 
 Command:
+
 docker-compose down
